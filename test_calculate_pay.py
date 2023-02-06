@@ -27,5 +27,5 @@ class TestCalculatePay(TestCase):
     def test_positive_wage_zero_hour(self):
          self.assertEqual(0, calculate_pay(0, 99))
 
-    def test_negative_wage_positive_hour(self):
+    def test_positive_wage_negative_hour(self):
          self.assertEqual(0, calculate_pay(-99, 1000))
